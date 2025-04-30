@@ -1,0 +1,19 @@
+Script started on 2025-04-30 10:17:11+02:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="109" LINES="44"]
+[?2004h]0;andrew@Andrew: ~/projects/part12-containers-applications/script-answers[01;32mandrew@Andrew[00m:[01;34m~/projects/part12-containers-applications/script-answers[00m$ [7mdocker run -it ubuntu bash[27mdocker run -it ubuntu bash
+[?2004lUnable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+
+[1A[2K2726e237d1a3: Pulling fs layer [1B[1A[2K2726e237d1a3: Downloading  3.146MB/29.72MB[1B[1A[2K2726e237d1a3: Downloading  3.146MB/29.72MB[1B[1A[2K2726e237d1a3: Downloading  3.146MB/29.72MB[1B[1A[2K2726e237d1a3: Downloading  9.437MB/29.72MB[1B[1A[2K2726e237d1a3: Downloading  14.68MB/29.72MB[1B[1A[2K2726e237d1a3: Downloading  20.97MB/29.72MB[1B[1A[2K2726e237d1a3: Downloading  27.26MB/29.72MB[1B[1A[2K2726e237d1a3: Download complete [1B[1A[2K2726e237d1a3: Extracting 1 s[1B[1A[2K2726e237d1a3: Extracting 1 s[1B[1A[2K2726e237d1a3: Extracting 1 s[1B[1A[2K2726e237d1a3: Extracting 1 s[1B[1A[2K2726e237d1a3: Extracting 1 s[1B[1A[2K2726e237d1a3: Extracting 1 s[1B[1A[2K2726e237d1a3: Extracting 1 s[1B[1A[2K2726e237d1a3: Extracting 1 s[1B[1A[2K2726e237d1a3: Extracting 1 s[1B[1A[2K2726e237d1a3: Extracting 1 s[1B[1A[2K2726e237d1a3: Extracting 1 s[1B[1A[2K2726e237d1a3: Pull complete [1BDigest: sha256:1e622c5f073b4f6bfad6632f2616c7f59ef256e96fe78bf6a595d1dc4376ac02
+Status: Downloaded newer image for ubuntu:latest
+[?2004h]0;root@3743280d69f0: /root@3743280d69f0:/# ls
+[?2004l[0m[01;36mbin[0m  [01;34mboot[0m  [01;34mdev[0m  [01;34metc[0m  [01;34mhome[0m  [01;36mlib[0m  [01;36mlib64[0m  [01;34mmedia[0m  [01;34mmnt[0m  [01;34mopt[0m  [01;34mproc[0m  [01;34mroot[0m  [01;34mrun[0m  [01;36msbin[0m  [01;34msrv[0m  [01;34msys[0m  [30;42mtmp[0m  [01;34musr[0m  [01;34mvar[0m
+[?2004h]0;root@3743280d69f0: /root@3743280d69f0:/# mkdir /usr/src/app
+[?2004l[?2004h]0;root@3743280d69f0: /root@3743280d69f0:/# mkdir /usr/src/app[Ktouch /usr/src/app/index.js
+[?2004l[?2004h]0;root@3743280d69f0: /root@3743280d69f0:/# [Knano /usr/a src/app/index.js 
+[?2004lbash: nano: command not found
+[?2004h]0;root@3743280d69f0: /root@3743280d69f0:/# [Kexit
+[?2004lexit
+[?2004h]0;andrew@Andrew: ~/projects/part12-containers-applications/script-answers[01;32mandrew@Andrew[00m:[01;34m~/projects/part12-containers-applications/script-answers[00m$ exit
+[?2004lexit
+
+Script done on 2025-04-30 10:18:41+02:00 [COMMAND_EXIT_CODE="127"]
