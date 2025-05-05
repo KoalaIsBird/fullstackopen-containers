@@ -1,0 +1,30 @@
+services:
+  frontend:
+    image: iliari-frontend-dev
+    volumes:
+      - ./frontend:/usr/src/app
+    build:
+      context: ./frontend
+      dockerfile: dev.Dockerfile
+    environment:
+      - VITE_BACKEND_URL=http://localhost:8080/api/
+
+  backend:
+    image: iliari-backend-dev
+    volumes:
+      - ./backend:/usr/src/app
+    build:
+      context: ./backend
+      dockerfile: dev.Dockerfile
+
+  nginx:
+    image: nginx
+    volumes:
+      - ./nginx.dev.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - 8080:80
+    depends_on:
+      - frontend
+      - backend
+
+
